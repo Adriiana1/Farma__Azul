@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Comprar</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="Wish shop project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="estilos/bootstrap4/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="estilos/checkout.css">
+<link rel="stylesheet" type="text/css" href="estilos/checkout_responsive.css">
+</head>
+<body>
+
+<div class="super_container">
+	
+	<!-- Header -->
+
+	<header class="header">
+		<div class="header_inner d-flex flex-row align-items-center justify-content-start">
+			<div class="logo"><a href="#">Farmaazul</a></div>
+			<nav class="main_nav">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="categories.html">Productos</a></li>
+					<li><a href="categories.html">Sobre nosotros</a></li>
+					<li><a href="categories.html">Revista</a></li>
+					<li><a href="contact.html">Contactos</a></li>
+				</ul>
+			</nav>
+			<div class="header_content ml-auto">
+				<div class="search header_search">
+					<form action="#">
+						<input type="search" class="search_input" required="required">
+						<button type="submit" id="search_button" class="search_button"><img src="imagenes/magnifying-glass.svg" alt=""></button>
+					</form>
+				</div>
+				<div class="shopping">
+					<!-- Cart -->
+					<a href="#">
+						<div class="cart">
+							<img src="imagenes/shopping-bag.svg" alt="">
+							<div class="cart_num_container">
+								<div class="cart_num_inner">
+									<div class="cart_num">1</div>
+								</div>
+							</div>
+						</div>
+					</a>
+					<!-- Star -->
+					<a href="#">
+						<div class="star">
+							<img src="imagenes/star.svg" alt="">
+							<div class="star_num_container">
+								<div class="star_num_inner">
+									<div class="star_num">0</div>
+								</div>
+							</div>
+						</div>
+					</a>
+					<!-- Avatar -->
+					<a href="#">
+						<div class="avatar">
+							<img src="imagenes/avatar.svg" alt="">
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="burger_container d-flex flex-column align-items-center justify-content-around menu_mm"><div></div><div></div><div></div></div>
+		</div>
+	</header>
+
+	<!-- Menu -->
+
+	<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
+		<div class="menu_close_container"><div class="menu_close"><div></div><div></div></div></div>
+		<div class="logo menu_mm"><a href="#">Farmaazul</a></div>
+		<div class="search">
+			<form action="#">
+				<input type="search" class="search_input menu_mm" required="required">
+				<button type="submit" id="search_button_menu" class="search_button menu_mm"><img class="menu_mm" src="imagenes/magnifying-glass.svg" alt=""></button>
+			</form>
+		</div>
+		<nav class="menu_nav">
+			<ul class="menu_mm">
+				<li class="menu_mm"><a href="index.html">Inicio</a></li>
+				<li class="menu_mm"><a href="#">Productos</a></li>
+				<li class="menu_mm"><a href="#">Sobre nosotros</a></li>
+				<li class="menu_mm"><a href="#">Revista</a></li>
+				<li class="menu_mm"><a href="#">Contactos</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<!-- Home -->
+
+	<div class="home">
+		<div class="home_background parallax-window" data-parallax="scroll" data-image-src= url data-speed="0.8"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="home_container">
+						<div class="home_content">
+							<div class="home_title">Compra</div>
+							<div class="breadcrumbs">
+								<ul>
+									<li><a href="index.html">Inicio</a></li>
+									<li><a href="index.html">Carrito de compras</a></li>
+									<li>Carrito de compras</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Checkout -->
+
+	<div class="checkout">
+		<div class="container">
+			<div class="row">
+
+				<!-- Billing Details -->
+				<div class="col-lg-6">
+					<div class="billing">
+						<div class="checkout_title">Detalles de la factura</div>
+						<div class="checkout_form_container">
+							<form action="#" id="checkout_form">
+								<div class="d-flex flex-lg-row flex-column align-items-start justify-content-between">
+									<input type="text" class="checkout_input checkout_input_50" placeholder="Nombre" required="required">
+									<input type="text" class="checkout_input checkout_input_50" placeholder="Apellido" required="required">
+								</div>
+								<input type="text" class="checkout_input" placeholder="Nombre de empresa">
+								<input type="text" class="checkout_input" placeholder="Correo electronico" required="required">
+								<select name="country" id="country" class="country_select checkout_input">
+									<option>Colombia</option>
+									<option>Mexico</option>
+									<option>Venezuela</option>
+								</select>
+								
+								<input type="text" class="checkout_input" placeholder="City" required="required">
+								<div class="d-flex flex-lg-row flex-column align-items-start justify-content-between">
+									<input type="text" class="checkout_input checkout_input_50" placeholder="Codigo postal" required="required">
+									<input type="text" class="checkout_input checkout_input_50" placeholder="Numero" required="required">
+								</div>
+								<textarea name="checkout_comment" id="checkout_comment" class="checkout_comment" placeholder="Deja un comentario sobre tu orden"></textarea>
+								<div class="billing_options">
+									<div class="billing_account">
+										<input type="checkbox" id="checkbox_account" name="regular_checkbox" class="regular_checkbox checkbox_account">
+										
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<!-- Cart Details -->
+				<div class="col-lg-6">
+					<div class="cart_details">
+						<div class="checkout_title">Total compra</div>
+						<div class="cart_total">
+							<ul>
+								<li class="d-flex flex-row align-items-center justify-content-start">
+									<div class="cart_total_title">Producto</div>
+									<div class="cart_total_price ml-auto">Total</div>
+								</li>
+								<li class="d-flex flex-row align-items-center justify-content-start">
+									<div class="cart_total_title">Producto de limpieza de piel</div>
+									<div class="cart_total_price ml-auto">$20.000</div>
+								</li>
+								<li class="d-flex flex-row align-items-center justify-content-start">
+									<div class="cart_total_title">Subtotal</div>
+									<div class="cart_total_price ml-auto">20.000</div>
+								</li>
+								<li class="d-flex flex-row align-items-center justify-content-start">
+									<div class="cart_total_title">Envio</div>
+									<div class="cart_total_price ml-auto">$5.000</div>
+								</li>
+								<li class="d-flex flex-row align-items-start justify-content-start total_row">
+									<div class="cart_total_title">Total</div>
+									<div class="cart_total_price ml-auto">$45.000</div>
+								</li>
+							</ul>
+						</div>
+						<div class="payment_options">
+							<div>
+								
+							</div>
+							<button class="cart_total_button">Realizar pedido</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+				
+
+	<!-- Footer -->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<div class="footer_logo"><a href="#">Farmaazul</a></div>
+					<nav class="footer_nav">
+						<ul>
+							<li><a href="index.html">Inicio</a></li>
+							<li><a href="categories.html">Productos</a></li>
+							<li><a href="categories.html">Sobre nosotros</a></li>
+							<li><a href="categories.html">Revista</a></li>
+							<li><a href="contact.html">Contactos</a></li>
+						</ul>
+					</nav>
+					<div class="footer_social">
+						<ul>
+							<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-reddit-alien" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+					<
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+
+</body>
+</html>
